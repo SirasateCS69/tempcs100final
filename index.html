@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <p>My Personal Portfolio Website</p>
+</header>
+
+<div class="container">
+
+    <!-- Form 1: Create Portfolio -->
+    <aside>
+        <h2>Create Portfolio</h2>
+
+        <form id="portfolio-form">
+
+            <label>Name *</label>
+            <input name="name" placeholder="Your name">
+
+            <label>What I Enjoy *</label>
+            <textarea name="enjoy"></textarea>
+
+            <label>What I've Tried *</label>
+            <textarea name="tried"></textarea>
+
+            <label>What I'm Curious About *</label>
+            <textarea name="curious"></textarea>
+
+            <button type="submit">Create Portfolio</button>
+        </form>
+
+        <h2>My Portfolios</h2>
+        <div id="portfolio-list"></div>
+    </aside>
+
+
+    <!-- Form 2: Add Portfolio Item -->
+    <main>
+
+        <section class="card">
+            <h2>Portfolio Items</h2>
+            <p id="selected-name">Please select a Portfolio</p>
+            <div id="show-enjoy"> 
+                asdfasdfsd
+
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Add Portfolio Item</h2>
+
+            <form id="item-form">
+
+                <div class="grid">
+
+                    <div>
+                        <label>Title *</label>
+                        <input name="title">
+                    </div>
+
+                    <div>
+                        <label>Type *</label>
+                        <select name="type">
+                            <option value="">Select Type</option>
+                            <option>Project</option>
+                            <option>Activity</option>
+                            <option>Course</option>
+                            <option>Competition</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Date * (YYYY-MM-DD)</label>
+                        <input name="date" placeholder="2026-11-05">
+                    </div>
+
+                    <div>
+                        <label>Role *</label>
+                        <input name="role">
+                    </div>
+
+                    <div class="full">
+                        <label>Skills *</label>
+                        <input name="skills">
+                    </div>
+
+                    <div class="full">
+                        <label>Description *</label>
+                        <textarea name="description"></textarea>
+                    </div>
+
+                    <div>
+                        <label>What I did *</label>
+                        <textarea name="did"></textarea>
+                    </div>
+
+                    <div>
+                        <label>What I learned *</label>
+                        <textarea name="learned"></textarea>
+                    </div>
+
+                    <div>
+                        <label>Challenge *</label>
+                        <textarea name="challenge"></textarea>
+                    </div>
+
+                    <div>
+                        <label>Next step *</label>
+                        <textarea name="next"></textarea>
+                    </div>
+
+                    <div class="full">
+                        <label>Evidence URL *</label>
+                        <input name="evidence" placeholder="https://example.com">
+                    </div>
+
+                </div>
+
+                <p id="message"></p>
+
+                <button type="submit">Save Item</button>
+                <button type="reset" class="clear">Clear</button>
+
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>My Work</h2>
+            <div id="items"></div>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

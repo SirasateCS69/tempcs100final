@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #edf5f4;
+    font-family: Arial, sans-serif;
+    color: #243536;
+}
+
+header {
+    background: #0e746d;
+    color: white;
+    padding: 20px 4%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 18px;
+    padding: 18px;
+}
+
+aside, .card {
+    background: white;
+    padding: 18px;
+    border: 1px solid #d5e2e0;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 17px;
+    color: #145e59;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c8d5d4;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 75px;
+    resize: vertical;
+}
+
+button {
+    background: #0e746d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #095b55;
+}
+
+.clear {
+    background: #dcebea;
+    color: #24514e;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 14px;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+.portfolio-choice {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #edf5f4;
+    color: #24514e;
+}
+
+.active {
+    background: #d4eeea;
+    border: 1px solid #0e746d;
+}
+
+.item-card {
+    background: #f8fbfa;
+    border: 1px solid #d5e2e0;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+#message {
+    color: #c0392b;
+    font-size: 13px;
+}
+
+@media (max-width: 760px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: auto;
+    }
+}
